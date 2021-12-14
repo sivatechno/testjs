@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>five</title>
+</head>
+<body>
+    <p>Take two sorted array and merge them together so that the resultant array is also sorted
+    </p>
+    <p id="result"></p>
+    <button onclick="run()">sort array</button>
+    <script>
+        function run(){
+            var a=[3,5,1,7,2,1];
+            var b=[7,4,2,9,4,1];
+            var c=a.concat(b);
+            c.sort();
+            document.getElementById("result").innerHTML = c;
+        }
+    </script>
+</body>
+</html>

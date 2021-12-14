@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="text/stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one</title>
+</head>
+
+<body>
+    <h3>Display your Name on Webpage , display all of vowels your name has when “calculateVowels” Button is clicked and
+        also add a button which when clicked will take me to github your github repo.</h3>
+    <div>
+        <p>Name : sivaramakrishnan </p>
+        <p>Vowels count</p>
+
+        <h3 id='demo'></h3>
+
+        <script>
+            function vowel_count(str1) {
+                var vowel_list = 'aeiouAEIOU';
+                var vcount = 0;
+
+
+                for (var x = 0; x < str1.length; x++) {
+                    if (vowel_list.indexOf(str1[x]) !== -1) {
+                        vcount += 1;
+                    }
+
+                }
+                return vcount;
+            }
+            document.getElementById("demo").innerHTML = vowel_count("sivaramakrishnan");
+        </script>
+
+    </div>
+
+
+</body>
+
+</html>
